@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1659024128246' stop='1659024128281'>
+    <name>Register fixture</name>
+    <title>Register fixture</title>
+    <test-cases>
+        <test-case start='1659024128246' status='failed' stop='1659024186628'>
+            <name>Register new user with valid information</name>
+            <title>Register new user with valid information</title>
+            <labels>
+                <label name='severity' value='undefined'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Chrome 103.0.5060.134 / Windows 11'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='4d1a28f3-ec53-410d-89d4-77c6ac7bdf99-attachment.png' type='image/png' size='189195'/>
+            </attachments>
+            <failure>
+                <message>AssertionError: expected false to be truthy</message>
+                <stack-trace>AssertionError: expected false to be truthy
+                
+                Browser: Chrome 103.0.5060.134 / Windows 10
+                Screenshot: D:\Dipalee\Javascript\ShoppingSiteDemo\reports\screenshots\2022-07-28_18-01-08\test-1\Chrome_103.0.5060.134_Windows_10\errors\1.png
+                
+                   29 |            .typeText(RegisterPage.txt_Password, data.password)
+                   30 |            .typeText(RegisterPage.txt_CnfPassword, data.password)
+                   31 |            // .click(RegisterPage.rad_YesNewsLetter)
+                   32 |            .click(RegisterPage.chk_PrivacyPolicy)
+                   33 |            .click(RegisterPage.btn_ContinueReg)
+                 > 34 |            .expect(RegisterPage.txt_AccountSuccessMsg.exists).ok()
+                   35 |            .click(HomePage.dd_MyAccount)
+                   36 |            .click(LoginPage.btn_LogOut)
+                   37 |            .expect(LoginPage.txt_accountLogoutMsg.exists).ok()
+                   38 |            .click(LoginPage.btn_logoutContinue)
+                   39 |
+                
+                   at &lt;anonymous> (D:\Dipalee\Javascript\ShoppingSiteDemo\test\RegisterTest.js:34:64)
+                   at asyncGeneratorStep (D:\Dipalee\Javascript\ShoppingSiteDemo\test\RegisterTest.js:6:268)
+                   at _next (D:\Dipalee\Javascript\ShoppingSiteDemo\test\RegisterTest.js:6:606)
+                   at &lt;anonymous> (D:\Dipalee\Javascript\ShoppingSiteDemo\test\RegisterTest.js:6:771)
+                   at &lt;anonymous> (D:\Dipalee\Javascript\ShoppingSiteDemo\test\RegisterTest.js:6:512)
+                   at &lt;anonymous> (D:\Dipalee\Javascript\ShoppingSiteDemo\test\RegisterTest.js:19:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

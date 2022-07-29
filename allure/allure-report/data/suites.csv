@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Jul 28 18:02:08 CEST 2022","Thu Jul 28 18:03:06 CEST 2022","58382","","Register fixture","","Register fixture","Register new user with valid information","Register new user with valid information",""

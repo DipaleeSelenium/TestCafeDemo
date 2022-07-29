@@ -1,0 +1,20 @@
+{
+    "browsers": "chrome",
+    "src": "test",
+    "reporter": "list",
+    "screenshots": {
+        "path": "reports/screenshots",
+        "takeOnFails": true,
+        "fullpage": true
+    },
+    "videoPath": "reports/videos",
+    "videoOptions": {
+        "singleFile": true,
+        "failedOnly": true
+    },
+    "concurrency": 1,
+    "selectorTimeout": 2000,
+    "assertionTimeout": 1000,
+    "pageLoadTimeout": 1000,
+    "speed": 0.1
+}
