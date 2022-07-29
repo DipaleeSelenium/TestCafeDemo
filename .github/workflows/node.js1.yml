@@ -1,0 +1,16 @@
+name: Testcafe Demo
+on:[push]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@master
+  - uses: actions/setup-node@master
+    with:
+      node-version: "10.x"
+  - uses: Meemaw/testcafe-action@master
+    with:
+      args: "chrome ./tests"
