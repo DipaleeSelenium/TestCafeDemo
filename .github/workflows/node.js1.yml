@@ -13,4 +13,4 @@ jobs:
       node-version: "10.x"
   - uses: Meemaw/testcafe-action@master
     with:
-      args: "chrome ./tests"
+      args: "chrome tests"
