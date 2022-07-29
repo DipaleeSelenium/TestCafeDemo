@@ -1,0 +1,16 @@
+name: Shopping Site testcafe demo workflow
+
+on: [push]
+
+jobs:
+  build:
+    name: install testcafe
+    runs-on: windows-latest
+
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: DevExpress/testcafe-action@latest
+      with:
+        args: "chrome tests"
+
